@@ -89,7 +89,7 @@ def writefrags(fragmenttrain):
 def main():
     parser=OptionParser(usage='%prog [OPTIONS]')
     parser.add_option('-r','--read',default="",help='Read the specified packet capture',dest='pcap')
-    parser.add_option('-d','--demo',action='store_true', help='Generate classic fragment test patter and reassemble it.')
+    parser.add_option('-d','--demo',action='store_true', help='Generate classic fragment test pattern and reassemble it.')
     parser.add_option('-w','--write',action='store_true', help='Write 5 files to disk with the payloads.')
     parser.add_option('-p','--prefix',default='reassembled', help='Specify the prefix for file names')
 
