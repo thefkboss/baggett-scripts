@@ -1,5 +1,5 @@
 #The following code will reassemble fragmented packets using the BSD, BSD-Right, First, Last and Linux so that an analyst gets a better understanding of how an attack would affect each of his different hosts.
-#This program was written by @MarkBaggett and is available for download at http://baggett-scripts.googlecode.com/svn/trunk/reassembler.py
+#This program was written by @MarkBaggett and is available for download at http://baggett-scripts.googlecode.com/svn/trunk/reassembler/
 #If you have questions about the script you can read the associated SANS Gold paper called "IP Fragment Reassembly with Scapy" by Mark Baggett
 
 from scapy.all import *
