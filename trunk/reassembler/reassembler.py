@@ -63,7 +63,7 @@ def processfrags(fragmenttrain):
     print rfc791(fragmenttrain)
     print "Reassembled using policy: Linux (Umm.. Linux)"
     print linux(fragmenttrain)
-    print "Reassembled using policy: BSD (AIX, FreeBSD, HPUX, VMS"
+    print "Reassembled using policy: BSD (AIX, FreeBSD, HPUX, VMS)"
     print bsd(fragmenttrain)
     print "Reassembled using policy: BSD-Right (HP Jet Direct)"
     print bsdright(fragmenttrain)
