@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #The following code will reassemble fragmented packets using the BSD, BSD-Right, First, Last and Linux so that an analyst gets a better understanding of how an attack would affect each of his different hosts.
 #This program was written by @MarkBaggett and is available for download at http://baggett-scripts.googlecode.com/svn/trunk/reassembler/
 #If you have questions about the script you can read the associated SANS Gold paper called "IP Fragment Reassembly with Scapy" by Mark Baggett
@@ -123,7 +125,7 @@ def main():
     for ipid in uniqipids.keys():
         print "Packet fragments found.  Collecting fragments now."
         fragmenttrain = [ a for a in fragmentedpackets if a[IP].id == ipid ] 
-        processit = raw_input("Reassemble packets between hosts "+str(a[0][IP].src)+" and "+str(a[0][IP].dst)+"? [Y/N]")
+        processit = raw_input("Reassemble packets between hosts "+str(fragmenttrain[0][IP].src)+" and "+str(fragmenttrain[0][IP].dst)+"? [Y/N]")
         if str(processit).lower()=="y":
             if options.write:
                 writefrags(fragmenttrain)
