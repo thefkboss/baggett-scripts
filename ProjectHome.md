@@ -1,0 +1,1 @@
+Feel free to steal, copy alter, share reuse without credit.
